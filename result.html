@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title>Multiple pages by shifa</title>
+		<link rel="stylesheet"		href="mystyle.css" />
+	</head>
+
+	<body>
+	<center>
+		<div class="nav">
+			<a href="index.html"> Home </a>
+			<a href="aboutus.html"> About Us </a>
+		</div>
+
+		<h1> ~ RESULT PAGE ~ </h1>
+		<h2 id="msg" />
+		<script>
+			let msg=document.getElementById("msg");
+			let res=localStorage.getItem("res");
+
+ 			if(res !==null)
+			{
+				msg.innerHTML="The result is :" + res;
+			}
+			else
+			{
+				msg.innerHTML="Enter a number to get a result.";
+			}
+		</script>
+	</center>
+	</body>
+
+</html>

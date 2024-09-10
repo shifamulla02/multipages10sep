@@ -1,0 +1,6 @@
+*{font-size:40px; font-family:Times New Roman;}
+body{background-color: peachpuff;}
+.nav {background-color: maroon;}
+.nav a {color: peachpuff; margin:300px; text-decoration: none;}
+h1{color:maroon;}
+h2{border:solid; width:70%; border-radius: 40px;border-color:maroon;}	

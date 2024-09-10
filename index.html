@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<title>Multiple pages by shifa</title>
+		<link rel="stylesheet"		href="mystyle.css" />
+	</head>
+
+	<body>
+	<center>
+		<div class="nav">
+			<a href="index.html"> Home </a>
+			<a href="aboutus.html"> About Us </a>
+		</div>
+
+		<h1> ~ SQUARE FINDER ~ </h1>
+
+		<form onsubmit="find()">
+			<input type="number"	step="any"	id="num"	placeholder="Enter the Number" />
+			<br/><br/>
+			<input type="submit" 	value="Find Square" />
+		</form>
+	  
+
+		<script>
+			function find()
+			{
+				event.preventDefault();
+				let num= document.getElementById("num");
+				let msg= document.getElementById("msg");
+	
+				if(num.value==="")
+				{
+					alert("please enter a number"); 
+					num.focus();
+					return;
+				}
+		
+				let n=parseInt(num.value);
+				let r= n**2;
+				localStorage.setItem("res",r.toFixed(2));
+				window.location.href="result.html";
+			}
+		</script>
+	</center>
+	</body>
+
+</html>
